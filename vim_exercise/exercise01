@@ -1,0 +1,48 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      Lesson 4.4: THE SUBSTITUTE COMMAND
+
+
+        ** Type  :s/old/new/g  to substitute 'new' for 'old'. **
+
+  1. Move the cursor to the line below marked --->.
+
+  2. Type  :s/thee/the <ENTER> .  Note that this command only changes the
+     first occurrence of "thee" in the line.
+
+  3. Now type  :s/thee/the/g .  Adding the  g  flag means to substitute
+     globally in the line, change all occurrences of "thee" in the line.
+
+---> thee best time to see thee flowers is in thee spring.
+
+  4. To change every occurrence of a character string between two lines,
+     type   :#,#s/old/new/g    where #,# are the line numbers of the range
+                               of lines where the substitution is to be done.
+     Type   :%s/old/new/g      to change every occurrence in the whole file.
+     Type   :%s/old/new/gc     to find every occurrence in the whole file,
+                               with a prompt whether to substitute or not.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+son 4 SUMMARY
+
+
+  1. CTRL-G  displays your location in the file and the file status.
+             G  moves to the end of the file.
+     number  G  moves to that line number.
+            gg  moves to the first line.
+
+  2. Typing  /  followed by a phrase searches FORWARD for the phrase.
+     Typing  ?  followed by a phrase searches BACKWARD for the phrase.
+     After a search type  n  to find the next occurrence in the same direction
+     or  N  to search in the opposite direction.
+     CTRL-O takes you back to older positions, CTRL-I to newer positions.
+
+  3. Typing  %  while the cursor is on a (,),[,],{, or } goes to its match.
+
+  4. To substitute new for the first old in a line type    :s/old/new
+     To substitute new for all 'old's on a line type       :s/old/new/g
+     To substitute phrases between two line #'s type       :#,#s/old/new/g
+     To substitute all occurrences in the file type        :%s/old/new/g
+     To ask for confirmation each time add 'c'             :%s/old/new/gc
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

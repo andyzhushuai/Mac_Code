@@ -1,0 +1,26 @@
+1. add file
+	git add FILE;
+	git commit -m "some info".
+
+2. view difference of change
+	git diff FILE.
+
+3. view status
+	git status.
+
+4. view recent logs 
+	git log.
+
+5. just view command id
+	git log --pretty=oneline
+
+6. recover file 
+	git reset --hard ID.
+
+7. symbol of command id
+	HEAD^: next id;
+	HEAD^^: next of next id;
+	HEAD~100: next 100 ids.
+
+8. view recent commands about git
+	git reflog

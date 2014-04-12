@@ -1,0 +1,3 @@
+latex note.tex
+dvipdf note.dvi
+evince note.pdf

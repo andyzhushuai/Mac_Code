@@ -1,0 +1,73 @@
+syntax on
+set number
+set hlsearch
+set ignorecase
+set ruler
+set autoindent
+set cindent
+
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set laststatus=2
+au! BufRead,BufNewFile *.cl    set filetype=cpp
+nmap tbn :tabnew<Space>
+call pathogen#infect()
+
+" TagList
+"let Tlist_Auto_Open = 1
+let Tlist_Use_Left_Window = 1
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Show_One_File = 1
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+
+"neocomplete
+let g:neocomplcache_enable_at_startup=1
+"powerline{
+"set guifont=PowerlineSymbols\ for\ Powerline
+"set guifont=guifont=Menlo\ for\ Powerline:h14
+"set nocompatible
+"set t_Co=256
+"let g:Powerline_symbols = 'fancy'
+"}
+
+"function! CurDir()
+"let curdir = substitute(getcwd(), $HOME, "~", "g")
+"return curdir
+"endfunction
+"set statusline=[%n]\ %f%m%r%h\ \|\ \ pwd:\ %{CurDir()}\ \ \|%=\|\ %l,%c\ %p%%\ \|\ ascii=%b,hex=%b%{((&fenc==\"\")?\"\":\"\ \|\ \".&fenc)}\ \|\ %{$USER}\ @\ %{hostname()}\
+
+""""""""""""""""""""""""""""""
+" BufExplorer
+""""""""""""""""""""""""""""""
+let g:bufExplorerDefaultHelp=0       " Do not show default help.
+let g:bufExplorerShowRelativePath=1  " Show relative paths.
+let g:bufExplorerSortBy='mru'        " Sort by most recently used.
+let g:bufExplorerSplitRight=0        " Split left.
+let g:bufExplorerSplitVertical=1     " Split vertically.
+let g:bufExplorerSplitVertSize = 30  " Split width
+let g:bufExplorerUseCurrentWindow=1  " Open in new window.
+autocmd BufWinEnter \[Buf\ List\] setl nonumber 
+""""""""""""""""""""""""""""""
+" winManager setting
+""""""""""""""""""""""""""""""
+""let g:winManagerWindowLayout='FileExplorer|TagList' " 设置我们要管理的插件
+""let g:winManagerWindowLayout='TagList|FileExplorer' " 设置我们要管理的插件
+""let g:winManagerWindowLayout='TagList|nerdtree' " 设置我们要管理的插件
+""let g:winManagerWindowLayout='TagList|NERDTree' " 设置我们要管理的插件
+"nmap wm :WMToggle<cr> 
+""let g:AutoOpenWinManager = 1
+let g:NERDTree_title="[NERDTree]"
+let g:winManagerWindowLayout="NERDTree|TagList"
+"let g:winManagerWindowLayout="TagList|NERDTree"
+let g:persistentBehaviour=0 " 如果所有编辑文件都关闭了，退出vim
+
+function! NERDTree_Start()
+	exec 'NERDTree'
+endfunction
+
+function! NERDTree_IsValid()
+	return 1
+endfunction
+
+nmap wm :WMToggle<CR>

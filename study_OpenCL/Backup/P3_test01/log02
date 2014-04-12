@@ -1,0 +1,63 @@
+Platform found : Advanced Micro Devices, Inc.
+No: 10101, name: , sex: n, address:
+No: 10101, name: , sex: n, address:
+No: 10101, name: , sex: n, address:
+No: 10101, name: , sex: n, address:
+No: 10101, name: , sex: n, address:
+No: 10101, name: , sex: n, address:
+No: 10101, name: , sex: n, address:
+No: 10101, name: , sex: n, address:
+No: 10101, name: , sex: n, address:
+No: 10101, name: , sex: n, address:
+Verify passed
+Platform found : Advanced Micro Devices, Inc.
+clBuild failed:-11
+
+"/tmp/OCLQGqoXC.cl", line 4133: error: identifier "cout" is undefined
+  			  cout<<"P3["<<u<<"]["<<v<<"]["<<lm<<"]["<<up<<"]["<<vp<<"]["<<lmp<<"] = "<<P3[u][v][lm][up][vp][lmp]<<endl;
+  			  ^
+
+"/tmp/OCLQGqoXC.cl", line 4133: error: expression must have integral type
+  			  cout<<"P3["<<u<<"]["<<v<<"]["<<lm<<"]["<<up<<"]["<<vp<<"]["<<lmp<<"] = "<<P3[u][v][lm][up][vp][lmp]<<endl;
+  			        ^
+
+"/tmp/OCLQGqoXC.cl", line 4133: error: expression must have integral type
+  			  cout<<"P3["<<u<<"]["<<v<<"]["<<lm<<"]["<<up<<"]["<<vp<<"]["<<lmp<<"] = "<<P3[u][v][lm][up][vp][lmp]<<endl;
+  			                  ^
+
+"/tmp/OCLQGqoXC.cl", line 4133: error: expression must have integral type
+  			  cout<<"P3["<<u<<"]["<<v<<"]["<<lm<<"]["<<up<<"]["<<vp<<"]["<<lmp<<"] = "<<P3[u][v][lm][up][vp][lmp]<<endl;
+  			                           ^
+
+"/tmp/OCLQGqoXC.cl", line 4133: error: expression must have integral type
+  			  cout<<"P3["<<u<<"]["<<v<<"]["<<lm<<"]["<<up<<"]["<<vp<<"]["<<lmp<<"] = "<<P3[u][v][lm][up][vp][lmp]<<endl;
+  			                                     ^
+
+"/tmp/OCLQGqoXC.cl", line 4133: error: expression must have integral type
+  			  cout<<"P3["<<u<<"]["<<v<<"]["<<lm<<"]["<<up<<"]["<<vp<<"]["<<lmp<<"] = "<<P3[u][v][lm][up][vp][lmp]<<endl;
+  			                                               ^
+
+"/tmp/OCLQGqoXC.cl", line 4133: error: expression must have integral type
+  			  cout<<"P3["<<u<<"]["<<v<<"]["<<lm<<"]["<<up<<"]["<<vp<<"]["<<lmp<<"] = "<<P3[u][v][lm][up][vp][lmp]<<endl;
+  			                                                         ^
+
+"/tmp/OCLQGqoXC.cl", line 4133: error: expression must have integral type
+  			  cout<<"P3["<<u<<"]["<<v<<"]["<<lm<<"]["<<up<<"]["<<vp<<"]["<<lmp<<"] = "<<P3[u][v][lm][up][vp][lmp]<<endl;
+  			                                                                    ^
+
+"/tmp/OCLQGqoXC.cl", line 4133: error: expression must have integral type
+  			  cout<<"P3["<<u<<"]["<<v<<"]["<<lm<<"]["<<up<<"]["<<vp<<"]["<<lmp<<"] = "<<P3[u][v][lm][up][vp][lmp]<<endl;
+  			                                                                            ^
+
+"/tmp/OCLQGqoXC.cl", line 4133: error: identifier "endl" is undefined
+  			  cout<<"P3["<<u<<"]["<<v<<"]["<<lm<<"]["<<up<<"]["<<vp<<"]["<<lmp<<"] = "<<P3[u][v][lm][up][vp][lmp]<<endl;
+  			                                                                                                       ^
+
+"/tmp/OCLQGqoXC.cl", line 5: warning: variable "G1" was set but never used
+  	double G1[4][4];
+  	       ^
+
+10 errors detected in the compilation of "/tmp/OCLQGqoXC.cl".
+
+Frontend phase failed compilation.
+
